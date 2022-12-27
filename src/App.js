@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="h-full bg-gradient-to-r from-[#f0cded] via-[#dce5ee] to-[#def5eb] px-[5%] py-[4%]">
+        <div className="h-full bg-gradient-to-tr from-[#001429] to-[#eb4293] px-[5%] py-[4%]">
           <Navbar />
           <div className="grid grid-cols-1  lg:grid-cols-12 gap-10 justify-between mt-[300px]">
             <div className="lg:col-span-5">
