@@ -3,10 +3,10 @@ import profile from '../image.jpg';
 
 export default function Personaldetail() {
   return (
-    <div className=" text-center bg-white px-5 py-20 rounded-3xl">
+    <div className=" text-center bg-white px-4 py-20 rounded-3xl">
       <img
         src={profile}
-        className="w-[240px] absolute left-[22%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[250px]"
+        className="w-[240px] absolute left-[50%] lg:left-[25%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[250px]"
         alt=""
       />
       <h2 className="mt-6 mb-1 font-semibold text-3xl">Betsegaw Sebsibe</h2>
