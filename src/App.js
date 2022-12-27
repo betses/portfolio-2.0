@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './component/Navbar';
+import Personaldetail from './component/Personaldetail';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="h-full bg-gradient-to-r from-[#f0cded] via-[#dce5ee] to-[#def5eb] px-[10%] py-[4%]">
+        <Navbar />
+        <div className="grid grid-cols-12 gap-20 justify-between mt-[300px]">
+          <div className="lg:col-span-4">
+            <Personaldetail />
+          </div>
+          <div className="lg:col-span-8">hello</div>
+        </div>
+      </div>
+    </>
   );
 }
 
