@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../image.jpg';
+import profile from '../assets/image.jpg';
 
 export default function Personaldetail() {
   return (

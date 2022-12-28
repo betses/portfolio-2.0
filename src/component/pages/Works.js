@@ -1,4 +1,6 @@
 import React from 'react';
+import Dota from '../../assets/dota.JPG';
+import Budget from '../../assets/Capture.JPG';
 
 export default function Works() {
   const data = [
@@ -9,7 +11,7 @@ export default function Works() {
       language: 'html, css',
       preview: 'www.freepik.com',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.',
-      image: 'https://bostamireact.ibthemespro.com/static/media/3.36ac81ad2889773da36a.jpg',
+      image: Dota,
       background: 'bg-[#fcf1ed]',
     },
     {
@@ -19,7 +21,7 @@ export default function Works() {
       language: 'html, css',
       preview: 'www.freepik.com',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.',
-      image: 'https://bostamireact.ibthemespro.com/static/media/2.0c58299993eba3cb8d6d.jpg',
+      image: Budget,
       background: 'bg-[#e9faff]',
     },
   ];
