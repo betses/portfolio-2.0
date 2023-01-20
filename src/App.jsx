@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './component/pages/About';
-import Navbar from './component/Navbar';
 import Personaldetail from './component/Personaldetail';
 import Navigation from './component/Navigation';
 import Resume from './component/pages/Resume';
@@ -11,13 +10,12 @@ function App() {
   return (
     <>
       <Router>
-        <div className="h-full bg-gradient-to-tr from-[#001429] to-[#eb4293] lg:px-[15%] px-[5%] py-[4%]">
-          <Navbar />
-          <div className="grid grid-cols-1  lg:grid-cols-12 gap-10 justify-between mt-[300px]">
+        <div className="min-h-screen bg-gradient-to-tr from-[#001429] to-[#eb4293] lg:px-[15%] px-[5%] pt-1">
+          <div className="grid grid-cols-1  lg:grid-cols-12 gap-10 justify-between mt-[200px]">
             <div className="lg:col-span-4">
               <Personaldetail />
             </div>
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-8 mb-10">
               <div className="flex justify-end">
                 <div className=" w-[30rem]">
                   <Navigation />
