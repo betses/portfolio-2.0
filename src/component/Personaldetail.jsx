@@ -1,11 +1,11 @@
 import React from 'react';
+import { DevicePhoneMobileIcon, MapPinIcon } from '@heroicons/react/24/solid';
+import { EnvelopeOpenIcon } from '@heroicons/react/24/outline';
 import profile from '../assets/image.jpg';
-import { DevicePhoneMobileIcon, MapPinIcon } from '@heroicons/react/24/solid'
-import { EnvelopeOpenIcon } from '@heroicons/react/24/outline'
 
 export default function Personaldetail() {
   return (
-    <div className=" text-center text-black bg-white px-4 py-20 rounded-3xl">
+    <div className=" text-center bg-white px-4 py-20 rounded-3xl">
       <img
         src={profile}
         className="w-[240px] absolute left-[50%] lg:left-[26%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[250px]"

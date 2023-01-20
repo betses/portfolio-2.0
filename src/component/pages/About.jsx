@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="bg-white p-8 rounded-lg text-black">
+    <div className="bg-white p-8 rounded-lg">
       <div className="hidden lg:block p-5">
         <div className="flex gap-8 items-center">
           <h2 className="text-4xl font-bold">About Me</h2>

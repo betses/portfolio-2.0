@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
   return (
-    <div className="justify-center hidden w-full gap-4 p-6 mb-5 text-black bg-white lg:flex rounded-3xl">
+    <div className="justify-center hidden w-full gap-4 p-6 mb-5 bg-white lg:flex rounded-3xl">
       <NavLink to="/" className="flex  flex-col items-center bg-[#f3f6f6] px-3 py-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
         <span className="text-xl">
           <svg
