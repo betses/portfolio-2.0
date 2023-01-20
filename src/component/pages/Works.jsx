@@ -7,7 +7,7 @@ const Budget = new URL('../../assets/Capture.JPG', import.meta.url).href;
 export default function Works() {
   const data = [
     {
-      id: '1',
+      id: '0',
       name: 'Nikita',
       catagory: 'Ui/Ux',
       language: 'html, css',
@@ -17,7 +17,7 @@ export default function Works() {
       background: 'bg-[#fcf1ed]',
     },
     {
-      id: '2',
+      id: '1',
       name: 'Nikita',
       catagory: 'Web Design',
       language: 'html, css',
@@ -31,33 +31,38 @@ export default function Works() {
   const [midalData, setModalData] = useState('');
 
   const clickHandler = (id) => {
-    console.log(id);
     setOpenModal(true);
     setModalData(id);
   };
   return (
-    <div className="bg-white p-8 rounded-lg">
-      <div className="flex gap-8 items-center pt-5 pb-20">
-        <h2 className="text-4xl font-bold">Portfolio</h2>
-        <div className="hidden lg:block">
-          <div className="h-[2px] w-64 bg-red-500" />
-        </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-        {data.map((element) => (
-          <div key={element.id} className={`${element.background} bg-white p-6 rounded-lg h-min`}>
-            <img
-              src={element.image}
-              className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg"
-              alt=""
-            />
-            <p className="pt-5 text-gray-400">{element.catagory}</p>
-            <p className=" text-lg font-semibold">{element.name}</p>
-            <button type="button" onClick={() => clickHandler(element.id)}>Read More</button>
+    <>
+      <div className="bg-white p-8 rounded-lg">
+        <div className="flex gap-8 items-center pt-5 pb-20">
+          <h2 className="text-4xl font-bold">Portfolio</h2>
+          <div className="hidden lg:block">
+            <div className="h-[2px] w-64 bg-red-500" />
           </div>
-        ))}
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+          {data.map((element) => (
+            <div key={element.id} className={`${element.background} bg-white p-6 rounded-lg h-min`}>
+              <img
+                src={element.image}
+                className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg"
+                alt=""
+              />
+              <div className="flex items-center justify-between py-6">
+                <p className=" text-2xl font-semibold">{element.name}</p>
+                <p className=" text-gray-400">{element.catagory}</p>
+              </div>
+              <div className="w-full flex justify-end">
+                <button type="button" className="py-2 px-4 text-white bg-indigo-600 hover:bg-indigo-800 rounded-lg" onClick={() => clickHandler(element.id)}>Read More</button>
+              </div>
+            </div>
+          ))}
+        </div>
         {openModal && <Modal closeModal={setOpenModal} data={data[midalData]} />}
       </div>
-    </div>
+    </>
   );
 }

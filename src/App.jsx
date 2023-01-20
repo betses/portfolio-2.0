@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="min-h-screen bg-gradient-to-tr from-[#001429] to-[#eb4293] lg:px-[15%] px-[5%] pt-1">
+        <div className="min-h-screen bg-gradient-to-tr from-[#001429] to-[#eb4293] px-[15%] pt-1">
           <div className="grid grid-cols-1  lg:grid-cols-12 gap-10 justify-between mt-[200px]">
             <div className="lg:col-span-4">
               <Personaldetail />
