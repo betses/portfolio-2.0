@@ -1,7 +1,7 @@
-import React from 'react';
+import { useState } from 'react';
+import Modal from './Modal';
 
 const Dota = new URL('../../assets/dota.JPG', import.meta.url).href;
-
 const Budget = new URL('../../assets/Capture.JPG', import.meta.url).href;
 
 export default function Works() {
@@ -27,6 +27,14 @@ export default function Works() {
       background: 'bg-[#e9faff]',
     },
   ];
+  const [openModal, setOpenModal] = useState(false);
+  const [midalData, setModalData] = useState('');
+
+  const clickHandler = (id) => {
+    console.log(id);
+    setOpenModal(true);
+    setModalData(id);
+  };
   return (
     <div className="bg-white p-8 rounded-lg">
       <div className="flex gap-8 items-center pt-5 pb-20">
@@ -45,8 +53,10 @@ export default function Works() {
             />
             <p className="pt-5 text-gray-400">{element.catagory}</p>
             <p className=" text-lg font-semibold">{element.name}</p>
+            <button type="button" onClick={() => clickHandler(element.id)}>Read More</button>
           </div>
         ))}
+        {openModal && <Modal closeModal={setOpenModal} data={data[midalData]} />}
       </div>
     </div>
   );
