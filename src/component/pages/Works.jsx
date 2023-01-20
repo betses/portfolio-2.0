@@ -1,6 +1,9 @@
 import React from 'react';
-import Dota from '../../assets/dota.JPG';
-import Budget from '../../assets/Capture.JPG';
+// import Dota from '../../assets/dota.JPG';
+const Dota = new URL('../../assets/dota.JPG', import.meta.url).href
+
+// import Budget from '../../assets/Capture.JPG';
+const Budget = new URL('../../assets/Capture.JPG', import.meta.url).href
 
 export default function Works() {
   const data = [
