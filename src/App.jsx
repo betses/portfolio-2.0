@@ -10,14 +10,14 @@ function App() {
   return (
     <>
       <Router>
-        <div className="min-h-screen bg-gradient-to-tr from-[#001429] to-[#eb4293] px-[15%] pt-1">
+        <div className="min-h-screen bg-gradient-to-tr from-[#001429] to-[#eb4293] px-[8%] pt-1">
           <div className="grid grid-cols-1  lg:grid-cols-12 gap-10 justify-between mt-[200px]">
             <div className="lg:col-span-4">
               <Personaldetail />
             </div>
             <div className="lg:col-span-8 mb-10">
               <div className="flex justify-end">
-                <div className=" w-[30rem]">
+                <div className=" w-[25rem]">
                   <Navigation />
                 </div>
               </div>

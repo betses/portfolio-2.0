@@ -1,11 +1,12 @@
+/* eslint-disable max-len */
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
   return (
-    <div className="justify-center hidden w-full gap-4 p-6 mb-5 bg-white lg:flex rounded-3xl">
-      <NavLink to="/" className="flex  flex-col items-center bg-[#f3f6f6] px-3 py-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
+    <div className="justify-between hidden w-full gap-4 p-6 mb-5 bg-white lg:flex rounded-3xl">
+      <NavLink to="/" className="flex  flex-col items-center bg-[#f3f6f6] p-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
         <span className="text-xl">
           <svg
             stroke="currentColor"
@@ -21,7 +22,7 @@ export default function Navigation() {
         </span>
         About
       </NavLink>
-      <NavLink to="/Resume" className="flex flex-col items-center bg-[#f3f6f6] px-2 py-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
+      {/* <NavLink to="/Resume" className="flex flex-col items-center bg-[#f3f6f6] px-2 py-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
         <span className="text-xl">
           <svg
             stroke="currentColor"
@@ -40,7 +41,7 @@ export default function Navigation() {
           </svg>
         </span>
         Resume
-      </NavLink>
+      </NavLink> */}
       <NavLink to="/Works" className="flex flex-col items-center bg-[#f3f6f6] px-4 py-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
         <span className="text-xl">
           <svg
@@ -65,7 +66,7 @@ export default function Navigation() {
         </span>
         Works
       </NavLink>
-      <NavLink to="/" className="flex flex-col items-center bg-[#f3f6f6] px-4 py-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
+      <NavLink to="/" className="flex flex-col items-center bg-[#f3f6f6] p-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
         <span className="text-xl">
           <svg
             stroke="currentColor"

@@ -46,17 +46,18 @@ export default function Works() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {data.map((element) => (
             <div key={element.id} className={`${element.background} bg-white p-6 rounded-lg h-min`}>
-              <img
-                src={element.image}
-                className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg"
-                alt=""
-              />
-              <div className="flex items-center justify-between py-6">
-                <p className=" text-2xl font-semibold">{element.name}</p>
+              <button type="button" onClick={() => clickHandler(element.id)}>
+                <img
+                  src={element.image}
+                  className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-[103%] rounded-lg"
+                  alt=""
+                />
+              </button>
+              <div className="py-6">
+                <button type="button" className="hover:text-[#FA5252] duration-300 transition" onClick={() => clickHandler(element.id)}>
+                  <p className=" text-2xl font-semibold">{element.name}</p>
+                </button>
                 <p className=" text-gray-400">{element.catagory}</p>
-              </div>
-              <div className="w-full flex justify-end">
-                <button type="button" className="py-2 px-4 text-white bg-indigo-600 hover:bg-indigo-800 rounded-lg" onClick={() => clickHandler(element.id)}>Read More</button>
               </div>
             </div>
           ))}

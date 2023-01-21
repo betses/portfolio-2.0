@@ -15,13 +15,8 @@ function Modal({ closeModal, data }) {
             <div>
               <h1 className="text-4xl text-gray-600 uppercase text-center font-bold">{data.name}</h1>
             </div>
-            <img
-              src={data.image}
-              className="rounded-lg my-10"
-              alt=""
-            />
             <div className="max-w-md ">
-              <p className="mb-3 leading-tight text-lg font-normal text-gray-700">
+              <p className="my-4 leading-tight text-lg font-normal text-gray-700">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam
                 possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum
                 numquam asperiores, voluptatum fugiatreiciendis aspernatur, non, odio aperiam
@@ -62,6 +57,11 @@ function Modal({ closeModal, data }) {
                 </div>
               </div>
             </div>
+            <img
+              src={data.image}
+              className="rounded-lg mt-10"
+              alt=""
+            />
           </div>
         </div>
       </div>
