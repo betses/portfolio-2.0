@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import BlogModal from './BlogModal';
+import Modal from './Modal';
 
 const Dota = new URL('../../assets/dota.JPG', import.meta.url).href;
 const Budget = new URL('../../assets/Capture.JPG', import.meta.url).href;
 
-export default function Works() {
+export default function Blogs() {
   const data = [
     {
       id: '0',
@@ -62,7 +62,7 @@ export default function Works() {
             </div>
           ))}
         </div>
-        {openModal && <BlogModal closeModal={setOpenModal} data={data[midalData]} />}
+        {openModal && <Modal closeModal={setOpenModal} data={data[midalData]} />}
       </div>
     </>
   );

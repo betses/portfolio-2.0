@@ -66,7 +66,7 @@ export default function Navigation() {
         </span>
         Works
       </NavLink>
-      <NavLink to="/" className="flex flex-col items-center bg-[#f3f6f6] p-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
+      <NavLink to="/Blogs" className="flex flex-col items-center bg-[#f3f6f6] p-5 rounded-xl hover:bg-gradient-to-r from-[#fa5252] to-[#e32e6e] hover:text-white ease-in duration-200">
         <span className="text-xl">
           <svg
             stroke="currentColor"
